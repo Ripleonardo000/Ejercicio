@@ -2,7 +2,7 @@
 {
     public class Burger
     {
-        public int Id { get; set; }
+        public int BurgId { get; set; }
 
         [Required]
         public string? Name { get; set; }
