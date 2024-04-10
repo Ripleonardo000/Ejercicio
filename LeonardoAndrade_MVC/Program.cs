@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using LeonardoAndrade_MVC.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<LeonardoAndrade_MVCContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("LeonardoAndrade_MVCContext") ?? throw new InvalidOperationException("Connection string 'LeonardoAndrade_MVCContext' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
