@@ -5,7 +5,7 @@ namespace LeonardoAndrade_MVC.Models
     public class Burger
     {
        
-        public int BurgerId { get; set; }
+        public int BurgerID { get; set; }
 
 
         [Required]
