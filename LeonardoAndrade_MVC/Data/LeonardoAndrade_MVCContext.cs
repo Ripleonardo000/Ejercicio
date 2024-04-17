@@ -15,5 +15,6 @@ namespace LeonardoAndrade_MVC.Data
         }
 
         public DbSet<LeonardoAndrade_MVC.Models.Burger> Burger { get; set; } = default!;
+        public DbSet<LeonardoAndrade_MVC.Models.Promo> Promo { get; set; } = default!;
     }
 }
