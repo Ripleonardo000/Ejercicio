@@ -34,7 +34,7 @@ namespace LeonardoAndrade_MVC.Controllers
             }
 
             var burger = await _context.Burger
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(m => m.ID == id);
             if (burger == null)
             {
                 return NotFound();
