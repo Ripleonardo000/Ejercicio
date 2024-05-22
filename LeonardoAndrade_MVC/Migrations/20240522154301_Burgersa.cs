@@ -5,7 +5,7 @@
 namespace LeonardoAndrade_MVC.Migrations
 {
     /// <inheritdoc />
-    public partial class Hamburgessa : Migration
+    public partial class Burgersa : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
